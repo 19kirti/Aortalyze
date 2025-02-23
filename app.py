@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pickle
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 
@@ -25,9 +26,28 @@ y = df["HeartDisease"]  # Target
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 
-# Train the model (NO PICKLE)
+# Train the model and save it using pickle
 rf_model = RandomForestClassifier(n_estimators=100, random_state=42)
 rf_model.fit(X_scaled, y)
+
+with open('rf_model.pkl', 'wb') as model_file:
+    pickle.dump(rf_model, model_file)
+
+with open('label_encoders.pkl', 'wb') as encoder_file:
+    pickle.dump(label_encoders, encoder_file)
+
+with open('scaler.pkl', 'wb') as scaler_file:
+    pickle.dump(scaler, scaler_file)
+
+# Load the model and encoders
+with open('rf_model.pkl', 'rb') as model_file:
+    rf_model = pickle.load(model_file)
+
+with open('label_encoders.pkl', 'rb') as encoder_file:
+    label_encoders = pickle.load(encoder_file)
+
+with open('scaler.pkl', 'rb') as scaler_file:
+    scaler = pickle.load(scaler_file)
 
 # Streamlit UI
 st.title("Heart Disease Prediction System")
