@@ -90,6 +90,6 @@ if st.button("Predict"):
     else:
         st.success("✅ Low risk of heart disease. Stay healthy!")
 
-st.write("User Inputs:", user_inputs)
-st.write("Encoded Inputs:", encoded_inputs)  # Check if categorical values are properly transformed
-st.write("Scaled Inputs:", user_scaled)  # Verify that scaling is correct
+# st.write("User Inputs:", user_inputs)
+# st.write("Encoded Inputs:", encoded_inputs)  # Check if categorical values are properly transformed
+# st.write("Scaled Inputs:", user_scaled)  # Verify that scaling is correct
