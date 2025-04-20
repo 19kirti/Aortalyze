@@ -10,40 +10,40 @@ Heart disease is one of the leading causes of death worldwide. Early prediction 
 
 ## Dataset Overview
 Numerical features:
-Age
-RestingBP (blood pressure)
-Cholesterol
-MaxHR (maximum heart rate)
-Oldpeak
+!. Age
+2. RestingBP (blood pressure)
+3. Cholesterol
+4. MaxHR (maximum heart rate)
+5. Oldpeak
 
 Categorical features:
-Sex
-ChestPainType
-RestingECG
-ExerciseAngina
-ST_Slope
+1. Sex
+2. ChestPainType
+3. RestingECG
+4. ExerciseAngina
+5. ST_Slope
 
 Target variable:
 HeartDisease (1 = presence, 0 = absence)
 
 ## Data PreProcessing 
-Label Encoding of categorical variables
-Feature Scaling using StandardScaler
-Train-test split (80-20 ratio)
-Duplicate check and null value handling
+1. Label Encoding of categorical variables
+2. Feature Scaling using StandardScaler
+3. Train-test split (80-20 ratio)
+4. Duplicate check and null value handling
 
 ## Model Building
 Logistic Regression:-
-Suitable for binary classification
-Easy to interpret
-Predicts probability using sigmoid function
-Helps identify influential features
+1. Suitable for binary classification
+2. Easy to interpret
+3. Predicts probability using sigmoid function
+4. Helps identify influential features
 
 Random Forest Classifier (Primary Model):-
-Ensemble of multiple decision trees
-Captures complex patterns and nonlinear relationships
-More accurate and robust
-Final deployed model
+1. Ensemble of multiple decision trees
+2. Captures complex patterns and nonlinear relationships
+3. More accurate and robust
+4. Final deployed model
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
@@ -52,6 +52,6 @@ Contributions are welcome! Please open an issue or submit a pull request.
 This project is licensed under the MIT License.
 
 ## Acknowledgments
-Dataset providers
-Streamlit for the web framework
-Scikit-learn for machine learning tools
+1. Dataset providers (Kaggle)
+2. Streamlit for the web framework
+3. Scikit-learn for machine learning tools
