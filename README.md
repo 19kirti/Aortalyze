@@ -14,7 +14,7 @@ Heart disease is one of the leading causes of death worldwide. Early prediction 
 
 ## Dataset Overview
 Numerical features:
-!. Age
+1. Age
 2. RestingBP (blood pressure)
 3. Cholesterol
 4. MaxHR (maximum heart rate)
