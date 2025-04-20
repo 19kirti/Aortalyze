@@ -1,14 +1,14 @@
-##Heart Disease Prediction System (Aortalyze)
+## Heart Disease Prediction System (Aortalyze)
 Heart disease is one of the leading causes of death worldwide. Early prediction and diagnosis can significantly reduce the risk of fatal outcomes. This project implements a Machine Learning-based Heart Failure Prediction System that predicts whether a person is at risk of heart disease based on medical features.
 
-##Features
+## Features
 Takes health-related inputs (age, cholesterol, blood pressure, etc.)
 Predicts risk level (0 = No Risk, 1 = High Risk)
 Uses trained ML models on real-world patient data
 User-friendly Streamlit web interface
 Real-time predictions without model storage
 
-##Dataset Overview
+## Dataset Overview
 Numerical features:
 Age
 RestingBP (blood pressure)
@@ -26,13 +26,13 @@ ST_Slope
 Target variable:
 HeartDisease (1 = presence, 0 = absence)
 
-##Data PreProcessing 
+## Data PreProcessing 
 Label Encoding of categorical variables
 Feature Scaling using StandardScaler
 Train-test split (80-20 ratio)
 Duplicate check and null value handling
 
-##Model Building
+## Model Building
 Logistic Regression:-
 Suitable for binary classification
 Easy to interpret
@@ -45,13 +45,13 @@ Captures complex patterns and nonlinear relationships
 More accurate and robust
 Final deployed model
 
-##Contributing
+## Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
-##License
+## License
 This project is licensed under the MIT License.
 
-##Acknowledgments
+## Acknowledgments
 Dataset providers
 Streamlit for the web framework
 Scikit-learn for machine learning tools
