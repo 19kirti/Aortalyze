@@ -1,6 +1,10 @@
 ## Heart Disease Prediction System (Aortalyze)
 Heart disease is one of the leading causes of death worldwide. Early prediction and diagnosis can significantly reduce the risk of fatal outcomes. This project implements a Machine Learning-based Heart Failure Prediction System that predicts whether a person is at risk of heart disease based on medical features.
 
+
+![Screenshot 2025-04-01 130458](https://github.com/user-attachments/assets/17866da0-2f09-4ddd-98eb-067e5d5e38e3)
+
+
 ## Features
 1. Takes health-related inputs (age, cholesterol, blood pressure, etc.)
 2. Predicts risk level (0 = No Risk, 1 = High Risk)
